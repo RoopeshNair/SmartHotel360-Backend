@@ -18,7 +18,7 @@ steps:
     azureContainerRegistry: shregistry.azurecr.io
     dockerFile: src/SmartHotel.Services.Hotels/Dockerfile
     useDefaultContext: false
-    buildContext: src
+    buildContext: src/Backend/src/
     imageName: '$(imageName)'
     includeLatestTag: true
 - task: Docker@1
