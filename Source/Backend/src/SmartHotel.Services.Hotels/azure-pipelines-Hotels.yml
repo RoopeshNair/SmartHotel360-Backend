@@ -16,9 +16,9 @@ steps:
   inputs:
     azureSubscriptionEndpoint: RMPM
     azureContainerRegistry: shregistry.azurecr.io
-    dockerFile: src/Source/Backend/src/SmartHotel.Services.Hotels/Dockerfile
+    dockerFile: Source/Backend/src/SmartHotel.Services.Hotels/Dockerfile
     useDefaultContext: false
-    buildContext: src/Source/Backend/src/
+    buildContext: Source/Backend/src
     imageName: '$(imageName)'
     includeLatestTag: true
 - task: Docker@1
