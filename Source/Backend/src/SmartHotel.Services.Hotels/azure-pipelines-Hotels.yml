@@ -14,7 +14,7 @@ steps:
 #  displayName: 'docker build'
 - task: Docker@1
   inputs:
-    azureSubscriptionEndpoint: RMPM (afc11291-9826-46be-b852-70349146ddf8)
+    azureSubscriptionEndpoint: RMPM
     azureContainerRegistry: shregistry.azurecr.io
     dockerFile: src/SmartHotel.Services.Hotels/Dockerfile
     useDefaultContext: false
@@ -23,14 +23,14 @@ steps:
     includeLatestTag: true
 - task: Docker@1
   inputs:
-    azureSubscriptionEndpoint: RMPM (afc11291-9826-46be-b852-70349146ddf8)
+    azureSubscriptionEndpoint: RMPM
     azureContainerRegistry: shregistry.azurecr.io
     command: 'Push an image'
     imageName: '$(imageName)'
     includeLatestTag: true
 - task: Docker@1
   inputs:
-    azureSubscriptionEndpoint: RMPM (afc11291-9826-46be-b852-70349146ddf8)
+    azureSubscriptionEndpoint: RMPM
     azureContainerRegistry: shregistry.azurecr.io
     command: 'Push an image'
     imageName: 'smarthotels/Hotels:latest'
