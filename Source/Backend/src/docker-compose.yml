@@ -17,7 +17,7 @@ services:
     image: smarthotels/suggestions
     build:
       context: ./SmartHotel.Services.Suggestions
-      dockerfile: Dockerfile
+      dockerfile: SmartHotel.Services.Suggestions/Dockerfile
     depends_on:
       - sql-data
 
@@ -25,19 +25,19 @@ services:
     image: smarthotels/configuration
     build:
       context: ./SmartHotel.Services.Configuration
-      dockerfile: Dockerfile
+      dockerfile: SmartHotel.Services.Configuration/Dockerfile
 
   tasks-api:
     image: smarthotels/tasks
     build:
       context: ./SmartHotel.Services.Tasks
-      dockerfile: Dockerfile
+      dockerfile: SmartHotel.Services.Tasks/Dockerfile
 
   reviews-api:
     image: smarthotels/reviews
     build:
       context: ./SmartHotel.Services.Reviews
-      dockerfile: Dockerfile    
+      dockerfile: SmartHotel.Services.Reviews/Dockerfile    
 
   notifications-api:
     image: smarthotels/notifications
@@ -49,13 +49,13 @@ services:
     image: smarthotels/discounts
     build:
       context: ./SmartHotel.Services.Discount
-      dockerfile: Dockerfile
+      dockerfile: SmartHotel.Services.Discount/Dockerfile
 
   profiles-api:
     image: smarthotels/profiles
     build:
       context: ./SmartHotel.Services.Profiles
-      dockerfile: Dockerfile
+      dockerfile: SmartHotel.Services.Profiles/Dockerfile
 
   sql-data:
     image: microsoft/mssql-server-linux:2017-GA
