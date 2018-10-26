@@ -5,7 +5,7 @@ metadata:
   labels:
     app: smarthotels  
 data:
-  Hotels_ConnectionStrings__DefaultConnection: Server=sql-data;Initial Catalog=HotelsDb;Persist Security Info=False;User ID=sa;Password=Password!;MultipleActiveResultSets=False;Connection Timeout=30;
+  Hotels_ConnectionStrings__DefaultConnection: Server=tcp:sh360sqlpublic.database.windows.net,1433;Initial Catalog=HotelsDb;Persist Security Info=False;User ID=sh360;Password=Password!;MultipleActiveResultSets=False;Connection Timeout=30;
   Bookings_ConnectionStrings__DefaultConnection: Server=sql-data;Initial Catalog=BookingsDb;Persist Security Info=False;User ID=sa;Password=Password!;MultipleActiveResultSets=False;Connection Timeout=30;
   Bookings_b2c__Tenant: smarthotel360.onmicrosoft.com
   Bookings_b2c__ClientId: c40d4573-4164-42be-9ef9-54f16ca15f2f
