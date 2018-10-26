@@ -171,6 +171,15 @@ namespace SmartHotel.Services.Hotels.Data.Seed
                 Latitude = -41.286460f,
                 Longitude = -174.776236f
             });
+            
+                        cities.Add(new City
+            {
+                Id = 80,
+                Name = "New Delhi",
+                Country = "India",
+                Latitude = -41.286460f,
+                Longitude = -174.776236f
+            });
 
             return cities;
         }
