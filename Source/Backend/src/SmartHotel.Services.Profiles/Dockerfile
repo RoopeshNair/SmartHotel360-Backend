@@ -5,6 +5,7 @@ EXPOSE 80
 FROM microsoft/aspnetcore-build:2.0.3 AS build
 WORKDIR /src
 COPY  . .
+WORKDIR /src/SmartHotel.Services.Profiles
 RUN dotnet build -c Release -o /app
 
 FROM build AS publish
