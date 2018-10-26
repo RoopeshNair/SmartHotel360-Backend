@@ -4,7 +4,7 @@ EXPOSE 80
 
 FROM microsoft/aspnetcore-build:2.0.3 AS build
 WORKDIR /src
-COPY  . .
+COPY . .
 WORKDIR /src/SmartHotel.Services.Discount
 RUN dotnet build -c Release -o /app
 
