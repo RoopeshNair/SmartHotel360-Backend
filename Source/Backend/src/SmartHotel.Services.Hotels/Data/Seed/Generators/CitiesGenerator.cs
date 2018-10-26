@@ -172,7 +172,7 @@ namespace SmartHotel.Services.Hotels.Data.Seed
                 Longitude = -174.776236f
             });
             
-                        cities.Add(new City
+            cities.Add(new City
             {
                 Id = 80,
                 Name = "New Delhi",
