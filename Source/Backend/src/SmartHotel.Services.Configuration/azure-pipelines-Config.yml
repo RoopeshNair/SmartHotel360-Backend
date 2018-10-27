@@ -15,7 +15,7 @@ steps:
 - task: Docker@1
   inputs:
     azureSubscriptionEndpoint: RMPM
-    azureContainerRegistry: SH360Backend94c6.azurecr.io
+    azureContainerRegistry: sh360backend94c6.azurecr.io
     dockerFile: Source/Backend/src/SmartHotel.Services.Configuration/Dockerfile
     useDefaultContext: false
     buildContext: Source/Backend/src
@@ -24,14 +24,14 @@ steps:
 - task: Docker@1
   inputs:
     azureSubscriptionEndpoint: RMPM
-    azureContainerRegistry: SH360Backend94c6.azurecr.io
+    azureContainerRegistry: sh360backend94c6.azurecr.io
     command: 'Push an image'
     imageName: '$(imageName)'
     includeLatestTag: true
 - task: Docker@1
   inputs:
     azureSubscriptionEndpoint: RMPM
-    azureContainerRegistry: SH360Backend94c6.azurecr.io
+    azureContainerRegistry: sh360backend94c6.azurecr.io
     command: 'Push an image'
     imageName: 'smarthotels/configuration:latest'
     includeLatestTag: true
