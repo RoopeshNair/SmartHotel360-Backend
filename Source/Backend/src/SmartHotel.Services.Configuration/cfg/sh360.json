@@ -1,12 +1,12 @@
 {
 "urls": {
-    "hotels": "http://40.114.30.152/hotels-api/",
-    "bookings": "http://40.114.30.152/bookings-api/",
-    "suggestions": "http://40.114.30.152/suggestions-api/",
-    "tasks": "http://40.114.30.152/tasks-api/",
-    "notifications": "http://40.114.30.152/notifications-api/",
-    "reviews": "http://40.114.30.152/reviews-api",
-    "discounts": "http://40.114.30.152/discounts-api/",
+    "hotels": "http://104.211.28.63/hotels-api/",
+    "bookings": "http://104.211.28.63/bookings-api/",
+    "suggestions": "http://104.211.28.63/suggestions-api/",
+    "tasks": "http://104.211.28.63/tasks-api/",
+    "notifications": "http://104.211.28.63/notifications-api/",
+    "reviews": "http://104.211.28.63/reviews-api",
+    "discounts": "http://104.211.28.63/discounts-api/",
     "images_base": "https://sh360imgdev.blob.core.windows.net/"
   },
   "pets_config": {
