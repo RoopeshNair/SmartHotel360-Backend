@@ -7,7 +7,7 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 variables:
-  imageName: 'smarthotels/discount:$(Build.BuildId)'
+  imageName: 'smarthotels/discounts:$(Build.BuildId)'
   
 steps:
 #- script: docker build -f Dockerfile -t $(imageName) .
@@ -33,5 +33,5 @@ steps:
     azureSubscriptionEndpoint: RMPM
     azureContainerRegistry: shregistry.azurecr.io
     command: 'Push an image'
-    imageName: 'smarthotels/discount:latest'
+    imageName: 'smarthotels/discounts:latest'
     includeLatestTag: true
