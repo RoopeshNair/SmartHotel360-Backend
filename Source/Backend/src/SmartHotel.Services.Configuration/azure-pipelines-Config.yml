@@ -8,6 +8,7 @@ pool:
 
 variables:
   imageName: 'smarthotels/configuration:$(Build.BuildId)'
+  ACRname: shregistry.azurecr.io
   
 steps:
 #- script: docker build -f Dockerfile -t $(imageName) .
@@ -15,7 +16,7 @@ steps:
 - task: Docker@1
   inputs:
     azureSubscriptionEndpoint: RMPM
-    azureContainerRegistry: sh360backend94c6.azurecr.io
+    azureContainerRegistry: '$(ACRname)'
     dockerFile: Source/Backend/src/SmartHotel.Services.Configuration/Dockerfile
     useDefaultContext: false
     buildContext: Source/Backend/src/SmartHotel.Services.Configuration
@@ -24,14 +25,14 @@ steps:
 - task: Docker@1
   inputs:
     azureSubscriptionEndpoint: RMPM
-    azureContainerRegistry: sh360backend94c6.azurecr.io
+    azureContainerRegistry: '$(ACRname)'
     command: 'Push an image'
     imageName: '$(imageName)'
     includeLatestTag: true
 - task: Docker@1
   inputs:
     azureSubscriptionEndpoint: RMPM
-    azureContainerRegistry: sh360backend94c6.azurecr.io
+    azureContainerRegistry: '$(ACRname)'
     command: 'Push an image'
     imageName: 'smarthotels/configuration:latest'
     includeLatestTag: true
