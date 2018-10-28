@@ -30,13 +30,13 @@ services:
   tasks-api:
     image: smarthotels/tasks
     build:
-      context: ./SmartHotel.Services.Tasks
+      context: .
       dockerfile: SmartHotel.Services.Tasks/Dockerfile
 
   reviews-api:
     image: smarthotels/reviews
     build:
-      context: ./SmartHotel.Services.Reviews
+      context: .
       dockerfile: SmartHotel.Services.Reviews/Dockerfile    
 
   notifications-api:
@@ -54,7 +54,7 @@ services:
   profiles-api:
     image: smarthotels/profiles
     build:
-      context: ./SmartHotel.Services.Profiles
+      context: .
       dockerfile: SmartHotel.Services.Profiles/Dockerfile
 
   sql-data:
