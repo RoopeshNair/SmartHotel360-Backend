@@ -1,12 +1,12 @@
 {
 "urls": {
-    "hotels": "http://40.85.167.217/hotels-api/",
-    "bookings": "http://40.85.167.217/bookings-api/",
-    "suggestions": "http://40.85.167.217/suggestions-api/",
-    "tasks": "http://40.85.167.217/tasks-api/",
-    "notifications": "http://40.85.167.217/notifications-api/",
-    "reviews": "http://40.85.167.217/reviews-api",
-    "discounts": "http://40.85.167.217/discounts-api/",
+    "hotels": "http://sh360.4e25ab7793b34989b8e7.eastus.aksapp.io/hotels-api/",
+    "bookings": "http://sh360.4e25ab7793b34989b8e7.eastus.aksapp.io/bookings-api/",
+    "suggestions": "http://sh360.4e25ab7793b34989b8e7.eastus.aksapp.io/suggestions-api/",
+    "tasks": "http://sh360.4e25ab7793b34989b8e7.eastus.aksapp.io/tasks-api/",
+    "notifications": "http://sh360.4e25ab7793b34989b8e7.eastus.aksapp.io/notifications-api/",
+    "reviews": "http://sh360.4e25ab7793b34989b8e7.eastus.aksapp.io/reviews-api",
+    "discounts": "http://sh360.4e25ab7793b34989b8e7.eastus.aksapp.io/discounts-api/",
     "images_base": "https://sh360imgdev.blob.core.windows.net/"
   },
   "pets_config": {
