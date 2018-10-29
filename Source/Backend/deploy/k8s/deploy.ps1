@@ -94,7 +94,7 @@ if (-not [string]::IsNullOrEmpty($dockerUser)) {
 
 if ($buildImages) {
     Write-Host "Building Docker images tagged with '$imageTag'" -ForegroundColor Yellow
-    $env:TAG=$imageTag
+    $env:TAG= '$imageTag'
     docker-compose -p .. -f ../../src/docker-compose.yml -f ../../src/docker-compose-tagged.yml  build    
 }
 
