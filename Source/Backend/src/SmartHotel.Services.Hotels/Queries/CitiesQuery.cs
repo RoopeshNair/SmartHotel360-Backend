@@ -50,7 +50,7 @@ namespace SmartHotel.Services.Hotels.Queries
                 new CityResult() { Id = 11, Name = "Orlando", Country = "United States"},
                 new CityResult() { Id = 30,  Name = "Barcelona", Country = "Spain"},
                 new CityResult() { Id = 50,  Name = "New Orleans", Country = "United States"},
-                new CityResult() { Id = 1,  Name = "Seattle", Country = "United States"},
+                //new CityResult() { Id = 1,  Name = "Seattle", Country = "United States"},
                 //new CityResult() { Id = 81,  Name = "New Delhi", Country = "India"},
                 new CityResult() { Id = 20,  Name = "Rome", Country = "Italy" }
             } as IEnumerable<CityResult>);
