@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 pool:
-  vmImage: 'Ubuntu 16.04'
+  name: 'smarthotelprod'
 
 variables:
   imageName: 'smarthotels/discounts:$(Build.BuildId)'
