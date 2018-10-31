@@ -21,19 +21,19 @@ steps:
     buildContext: Source/Backend/src
     imageName: '$(imageName)'
     includeLatestTag: true
-#- task: Docker@1
-#  displayName: 'docker push with BuildId as tag'
-#  inputs:
-#    azureSubscriptionEndpoint: RMPM
-#    azureContainerRegistry: shregistry.azurecr.io
-#    command: 'Push an image'
-#    imageName: '$(imageName)'
-#    includeLatestTag: true
 - task: Docker@1
   displayName: 'docker push with BuildId as tag'
   inputs:
     azureSubscriptionEndpoint: RMPM
     azureContainerRegistry: shregistry.azurecr.io
     command: 'Push an image'
-    imageName: 'smarthotels/Hotels:latest'
+    imageName: '$(imageName)'
     includeLatestTag: true
+#- task: Docker@1
+#  displayName: 'docker push with latest as tag'
+#  inputs:
+#    azureSubscriptionEndpoint: RMPM
+#    azureContainerRegistry: shregistry.azurecr.io
+#    command: 'Push an image'
+#    imageName: 'smarthotels/Hotels:latest'
+#    includeLatestTag: true
