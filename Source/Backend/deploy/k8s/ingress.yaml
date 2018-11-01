@@ -11,7 +11,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"  
 spec:
   rules:
-  - host: sh360.<guid>.<region>.aksapp.io
+  - host: sh360.1f5a621cb1da4697a937.eastus.aksapp.io
     http:
       paths:
       - path: /hotels-api
