@@ -46,7 +46,7 @@ namespace SmartHotel.Services.Hotels.Queries
                 new CityResult() { Id = 10, Name = "New York", Country = "United States"},
                 new CityResult() { Id = 12, Name = "Newark", Country = "United States"},
                 new CityResult() { Id = 13, Name = "New Haven", Country = "United States"},
-                new CityResult() { Id = 14, Name = "New Jersy", Country = "United States"},
+                //new CityResult() { Id = 14, Name = "New Jersy", Country = "United States"},
                 new CityResult() { Id = 11, Name = "Orlando", Country = "United States"},
                 new CityResult() { Id = 30,  Name = "Barcelona", Country = "Spain"},
                 new CityResult() { Id = 50,  Name = "New Orleans", Country = "United States"},
