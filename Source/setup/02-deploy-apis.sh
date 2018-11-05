@@ -112,7 +112,7 @@ then
   registry=$acrName.azurecr.io
 fi
 
-pushd ../../SmartHotel360-Backend/deploy/k8s
+pushd ../Backend/deploy/k8s
 
 
 if [[ "$acrName" != "" ]]
