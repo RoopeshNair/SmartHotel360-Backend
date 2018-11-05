@@ -96,8 +96,8 @@ if (( $httpRouting == 1 ))
 then
   echo "Use of --httpRouting overrides -d"
   echo "Autodetecting DNS of $aksName in $aksRg"
-  echo dns=$(az resource show --api-version 2018-03-31 --id /subscriptions/${AKS_SUB}/resourceGroups/${AKS_RG}/providers/Microsoft.ContainerService/managedClusters/${AKS_NAME} --query properties.addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName | tr -d '"')
-  dns=az resource show --api-version 2018-03-31 --id /subscriptions/afc11291-9826-46be-b852-70349146ddf8/resourceGroups/SH360/providers/Microsoft.ContainerService/managedClusters/SHcluster --query properties.addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
+  #echo dns=$(az resource show --api-version 2018-03-31 --id /subscriptions/${AKS_SUB}/resourceGroups/${AKS_RG}/providers/Microsoft.ContainerService/managedClusters/${AKS_NAME} --query properties.addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName | tr -d '"')
+  dns=az resource show --api-version 2018-03-31 --id /subscriptions/afc11291-9826-46be-b852-70349146ddf8/resourceGroups/${AKS_RG}/providers/Microsoft.ContainerService/managedClusters/${AKS_NAME} --query properties.addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
   echo "DNS detected is: $dns"
   if [[ "$dns" == "" ]]
   then
