@@ -54,7 +54,8 @@ echo "Using registry: $registry, tag $imageTag & organization $dockerOrg"
 echo "Base name for releases is (empty means random for each release): $release"
 
 echo "Getting the nginx controller ip of the cluster... (this can take a while)"
-nginxip=$(kubectl get svc -n kube-system | grep "LoadBalancer" | awk '{print $4}')
+#nginxip=$(kubectl get svc -n kube-system | grep "LoadBalancer" | awk '{print $4}')
+nginxip=23.96.126.45
 echo "DNS used to ingress resources (if any): '$dns' (Use -d <dns> to config  DNS for ingress). nginx-ingress IP value detected is: $nginxip"
 
 if (( clean == 1 ))
